@@ -8399,6 +8399,7 @@ broken-packages:
   - reflex-dom-svg
   - reflex-gloss
   - reflex-gloss-scene
+  - reflex-libtelnet
   - reflex-orphans
   - reflex-sdl2
   - reflex-transformers
