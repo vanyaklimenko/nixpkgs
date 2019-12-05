@@ -497,6 +497,8 @@ in {
 
   cachy = callPackage ../development/python-modules/cachy { };
 
+  cadquery = callPackage ../development/python-modules/cadquery { };
+
   catalogue = callPackage ../development/python-modules/catalogue { };
 
   cdecimal = callPackage ../development/python-modules/cdecimal { };
@@ -1047,11 +1049,6 @@ in {
 
   pyjwkest = callPackage ../development/python-modules/pyjwkest { };
 
-  pykde4 = callPackage ../development/python-modules/pykde4 {
-    inherit (self) pyqt4;
-    callPackage = pkgs.callPackage;
-  };
-
   pykdtree = callPackage ../development/python-modules/pykdtree {
     inherit (pkgs.llvmPackages) openmp;
   };
@@ -1101,6 +1098,8 @@ in {
 
   pyschedule = callPackage ../development/python-modules/pyschedule { };
 
+  pyscreenshot = callPackage ../development/python-modules/pyscreenshot { };
+
   pyside = callPackage ../development/python-modules/pyside {
     inherit (pkgs) mesa;
   };
@@ -1139,6 +1138,8 @@ in {
 
   pytesseract = callPackage ../development/python-modules/pytesseract { };
 
+  pytest-bdd = callPackage ../development/python-modules/pytest-bdd { };
+  
   pytest-black = callPackage ../development/python-modules/pytest-black { };
 
   pytest-click = callPackage ../development/python-modules/pytest-click { };
@@ -1155,11 +1156,15 @@ in {
 
   pytest-pylint = callPackage ../development/python-modules/pytest-pylint { };
 
+  pytest-qt = callPackage ../development/python-modules/pytest-qt { };
+
   pytest-testmon = callPackage ../development/python-modules/pytest-testmon { };
 
   pytest-tornado = callPackage ../development/python-modules/pytest-tornado { };
 
   pytest-xprocess = callPackage ../development/python-modules/pytest-xprocess { };
+
+  pytest-xvfb = callPackage ../development/python-modules/pytest-xvfb { };
 
   pytmx = callPackage ../development/python-modules/pytmx { };
 
@@ -1324,6 +1329,8 @@ in {
   };
 
   tableaudocumentapi = callPackage ../development/python-modules/tableaudocumentapi { };
+
+  tesserocr = callPackage ../development/python-modules/tesserocr { };
 
   trueskill = callPackage ../development/python-modules/trueskill { };
 
@@ -3269,6 +3276,8 @@ in {
 
   flask_elastic = callPackage ../development/python-modules/flask-elastic { };
 
+  flask-httpauth = callPackage ../development/python-modules/flask-httpauth { };
+
   flask-jwt-extended = callPackage ../development/python-modules/flask-jwt-extended { };
 
   flask-limiter = callPackage ../development/python-modules/flask-limiter { };
@@ -5032,7 +5041,9 @@ in {
 
   rpmfluff = callPackage ../development/python-modules/rpmfluff {};
 
-  rpy2 = callPackage ../development/python-modules/rpy2 {};
+  rpy2 = if isPy3k
+    then callPackage ../development/python-modules/rpy2 { }
+    else callPackage ../development/python-modules/rpy2/2.nix { };
 
   rtslib = callPackage ../development/python-modules/rtslib {};
 
@@ -5261,6 +5272,8 @@ in {
   };
 
   tiros = callPackage ../development/python-modules/tiros { };
+
+  tinydb = callPackage ../development/python-modules/tinydb { };
 
   tifffile = callPackage ../development/python-modules/tifffile { };
 

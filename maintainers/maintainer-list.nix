@@ -3225,6 +3225,12 @@
     githubId = 2195834;
     name = "Jaakko Luttinen";
   };
+  jm2dev = {
+    email = "jomarcar@gmail.com";
+    github = "jm2dev";
+    githubId = 474643;
+    name = "José Miguel Martínez Carrasco";
+  };
   jmagnusj = {
     email = "jmagnusj@gmail.com";
     github = "magnusjonsson";
@@ -4163,6 +4169,12 @@
     githubId = 34086;
     name = "Marc Weber";
   };
+  marcus7070 = {
+    email = "marcus@geosol.com.au";
+    github = "marcus7070";
+    githubId = 50230945;
+    name = "Marcus Boyd";
+  };
 	marenz = {
 		email = "marenz@arkom.men";
 		github = "marenz2569";
@@ -4665,6 +4677,12 @@
     github = "fstamour";
     githubId = 2881922;
     name = "Francis St-Amour";
+  };
+  mtrsk = {
+    email = "marcos.schonfinkel@protonmail.com";
+    github = "mtrsk";
+    githubId = 16356569;
+    name = "Marcos Benevides";
   };
   mredaelli = {
     email = "massimo@typish.io";
@@ -6108,6 +6126,16 @@
     github = "seqizz";
     githubId = 307899;
     name = "Gurkan Gur";
+  };
+  servalcatty = {
+    email = "servalcat@pm.me";
+    github = "servalcatty";
+    githubid = 51969817;
+    name = "Serval";
+    keys = [{
+      longkeyid = "rsa4096/0x4A2AAAA382F8294C";
+      fingerprint = "A317 37B3 693C 921B 480C  C629 4A2A AAA3 82F8 294C";
+    }];
   };
   sfrijters = {
     email = "sfrijters@gmail.com";
@@ -7651,5 +7679,17 @@
     github = "rakesh4g";
     githubId = 50867187;
     name = "Rakesh Gupta";
+  };
+  mlatus = {
+    email = "wqseleven@gmail.com";
+    github = "Ninlives";
+    githubId = 17873203;
+    name = "mlatus";
+  };
+  waiting-for-dev = {
+    email = "marc@lamarciana.com";
+    github = "waiting-for-dev";
+    githubId = 52650;
+    name = "Marc Busqué";
   };
 }
